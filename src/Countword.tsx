@@ -42,6 +42,7 @@ export function Countword(param: inTextProps) {
         
     }
 
-    aWordObj.sort((a, b) => (a.occurance < b.occurance) ? 1 : -1); //Sort wordObjs according to occurance
+    //aWordObj.sort((a, b) => (a.occurance < b.occurance) ? 1 : -1); //Sort wordObjs according to occurance
+    aWordObj.sort((a, b) => b.occurance - a.occurance || a.word.localeCompare(b.word));
     return (aWordObj);
 }
