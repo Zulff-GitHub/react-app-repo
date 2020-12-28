@@ -6,7 +6,7 @@ import Body from './Body';
 function App() {
   return (
     <div className="App">
-      <Header appName="Word App Count" />
+      <Header appName="Word Count App" />
       <Body />
     </div>
   );
